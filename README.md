@@ -266,8 +266,6 @@ Add a tooltip/status bar text describing in a full sentence what a command does.
 
 Bad: Sandbox Tools
 
-TODO: Recreate screenshots. Use consistent sizes. Use high DPI system.
-
 <img src="images/tooltip_descriptions_1_bad.png" />
 
 Good: Rectangle Tool
