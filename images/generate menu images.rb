@@ -15,17 +15,19 @@ Sketchup.plugins_disabled = false
 # Never add separators to the extension menus
 # Bad
 menu = UI.menu("Plugins")
-menu.add_item("My Extension") { }
-menu.add_item("Some Other Extension") { }
+menu.add_item("Extension 1") { }
+menu.add_item("Extension 2") { }
+menu.add_item("Extension 3") { }
 menu.add_separator
 menu.add_item("Bad Extension") { }
-menu.add_item("Yet Another Extension") { }
+menu.add_item("Extension 5") { }
 # Good
 menu = UI.menu("Plugins")
-menu.add_item("My Extension") { }
-menu.add_item("Some Other Extension") { }
+menu.add_item("Extension 1") { }
+menu.add_item("Extension 2") { }
+menu.add_item("Extension 3") { }
 menu.add_item("Good Extension") { }
-menu.add_item("Yet Another Extension") { }
+menu.add_item("Extension 5") { }
 
 # Always add separator before entry in other menus
 # Bad

@@ -276,41 +276,39 @@ Good: Rectangle Tool
 
 ### Use of Separators
 
-TODO: Change "My" to "an". Highlight the extension in question.
-
 Never add separators to the Extensions menu. This makes unrelated entries appear
 grouped together. For grouping your extension’s entries in the Extensions menu,
 always use a submenu.
 
 Bad:
 
-<img src="images/separators_1_never_in_extensions_menu_1_bad.png" />
+<img src="images/separators_1_never_in_extensions_menu_1_bad.png" width=177 />
 
 Good:
 
-<img src="images/separators_1_never_in_extensions_menu_2_good.png" />
+<img src="images/separators_1_never_in_extensions_menu_2_good.png" width=177 />
 
 In menus other than Extensions, always add a separator before your extension.
 This prevents your entries from being read as a part of an existing group.
 
 Bad:
 
-<img src="images/separators_2_always_in_other_menus_1_bad.png" />
+<img src="images/separators_2_always_in_other_menus_1_bad.png" width=215 />
 
 Good:
 
-<img src="images/separators_2_always_in_other_menus_2_good.png" />
+<img src="images/separators_2_always_in_other_menus_2_good.png" width=215 />
 
 Never add a separator after your entries. It is up to the following extension to
 add a separator before its entries.
 
 Bad:
 
-<img src="images/separators_3_never_trailing_1_bad.png" /> <img src="images/separators_3_never_trailing_2_bad.png" />
+<img src="images/separators_3_never_trailing_1_bad.png" width=215 /> <img src="images/separators_3_never_trailing_2_bad.png" width=215 />
 
 Good:
 
-<img src="images/separators_3_never_trailing_3_good.png" />
+<img src="images/separators_3_never_trailing_3_good.png" width=215 />
 
 ## Tools
 
