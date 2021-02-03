@@ -418,7 +418,7 @@ can convey a plane.
 
 Good: Scale tool\
 Good: Rotate tool\
-Good: Solar North TODO: Make link
+Good: [Solar North](https://github.com/SketchUp/solar-north)
 
 ### Use the Status Bar
 
@@ -439,7 +439,7 @@ Good: "Select a component to make unique. Shift = Make all instances unique."
 
 Use the Instructor to give a slightly more in depth explanation of the tool. Include a list of the tool stages, all modifier keys and any alternate workflows flows here such a preselection and in tool selection.
 
-Good: Solar North TODO: Add link
+Good: [Solar North](https://github.com/SketchUp/solar-north)
 
 ### Be Scale Agnostic
 
