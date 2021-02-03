@@ -355,6 +355,7 @@ and toolbar respectively. Up to SketchUp 2015 this was done automatically, but
 now needs to be actively implemented with a validation proc.
 
 Bad: [Solar North 1.2.0](https://github.com/SketchUp/solar-north/releases/tag/1.2.0)
+
 Good: [Solar North 2.0.0](https://github.com/SketchUp/solar-north)
 
 ### Use In-Tool Selection
@@ -372,8 +373,8 @@ TODO: Add code example. Can e.g. use my Picker mix in.
 If a tool has a stage for selecting entities, this stage can be skipped if
 entities are already selected at tool activation.
 
-Good: Follow Me allowing a pre-selected rail.
-Good: Move, Scale and Rotate tool
+Good: Follow Me allowing a pre-selected rail. \
+Good: Move, Scale and Rotate tool \
 Good: Eneroth Solid Tools allowing multi-object trim/subtract if these objects are pre-selected.
 
 TODO: Add video?
@@ -384,7 +385,8 @@ When applicable, allow the user to lock a tool to the modelling axes with arrow
 keys, or to planes and liens with Shift.
 
 Bad: Eneroth Railroad System
-Good: Line tool
+
+Good: Line tool \
 Good: Eneroth Scaled Tape Measure Tool
 
 TODO: Use different steps of SU tool examples as bad and good examples. May base on Eneroth Scaled Tape Measure Tool.
@@ -404,7 +406,8 @@ However, the initial click can be extended to a drag for additional input, e.g.
 to select a rotational axis in the Rotate tool.
 
 Bad: Circle tool, Polygon tool
-Good: Rotate tool
+
+Good: Rotate tool\
 Good: Curic Mirror
 
 ### Convey Depth and Direction with Perspective
@@ -413,8 +416,8 @@ It can be tricky to convey 3D concepts on a 2D screen. Instead of 2D handles in
 screen space, 3D handles can help convey where in space they are. A 3D circle
 can convey a plane.
 
-Good: Scale tool
-Good: Rotate tool
+Good: Scale tool\
+Good: Rotate tool\
 Good: Solar North TODO: Make link
 
 ### Use the Status Bar
@@ -432,7 +435,8 @@ Bad: "Press a component to make it unique so you can edit it without editing the
 
 Good: "Select a component to make unique. Shift = Make all instances unique."
 
-Use the Instructor
+### Use the Instructor
+
 Use the Instructor to give a slightly more in depth explanation of the tool. Include a list of the tool stages, all modifier keys and any alternate workflows flows here such a preselection and in tool selection.
 
 Good: Solar North TODO: Add link
