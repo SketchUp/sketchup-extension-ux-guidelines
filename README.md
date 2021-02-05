@@ -145,6 +145,14 @@ starts, the user may have forgotten about it when it is time to use the
 extension. This is also distracting when you want to use SketchUp for anything
 other than that particular extension.
 
+Bad:
+
+<img src="images/convey_missing_license_bad.png" width=516 />
+
+Good:
+
+<img src="images/convey_missing_license_good.png" width=516 />
+
 ### Link Dialog to Selection
 
 If you can open a UI to edit the properties of a selected object, it feels
@@ -161,14 +169,17 @@ Good: [HtmlDialog examples](https://github.com/SketchUp/htmldialog-examples) (Ex
 
 ### Question Your Warnings
 
+<img src="images/question_your_warnings.jpg" width=700 />
+
+_If you already know I want to stand here for better reach, why not just design
+it to support my body weight, instead of slapping a sticker on it?_
+
 If you feel the need to warn the user about interacting with your extension a
 certain way, consider instead making the extension behave the way the user
 expects by allowing such interaction. For instance, instead of writing "WARNING:
 Don't use SketchUp's move tool to move walls'', consider making your walls
 support the Move tool. When phrasing such a warning you have already identified
 that the Move tool is a natural way to move your walls.
-
-TODO: Add photo, e.g. of a sit-high surface with a sign saying you can't sit on it.
 
 ### Don't Scream
 
@@ -258,8 +269,6 @@ When localizing an extension, beware that capitalization rules differ between
 languages. For instance Swedish only capitalizes the first word (and proper
 nouns) also in title case.
 
-TODO: Add screenshot
-
 ### Tooltips/Descriptions
 
 Add a tooltip/status bar text describing in a full sentence what a command does.
@@ -348,9 +357,9 @@ reactivates the previous tool when done. The same applies to
 
 ### Highlight Active Tool in Menu/Toolbar
 
-When a tool is selected, show its command as checked and pressed in the menus
-and toolbar respectively. Up to SketchUp 2015 this was done automatically, but
-now needs to be actively implemented with a validation proc.
+When a tool is selected, show its entry as checked and button as depressed in
+the menus and toolbar respectively. Up to SketchUp 2015 this was done
+automatically, but now needs to be actively implemented with a validation proc.
 
 Bad: [Solar North 1.2.0](https://github.com/SketchUp/solar-north/releases/tag/1.2.0)
 
@@ -359,20 +368,23 @@ Good: [Solar North 2.0.0](https://github.com/SketchUp/solar-north)
 ### Use In-Tool Selection
 
 If a tool requires a certain selection to be used, prefer entering a select mode
-when the tool is activated without such a selection, instead of an error
+when the tool is activated without such a selection, instead of showing an error
 message.
 
-Good: Scale Tool, Move tool
+Good: Scale Tool, Move tool, Rotate tool
 
 TODO: Add code example. Can e.g. use my Picker mix in.
 
 ### Support Tool Pre-Selection
 
 If a tool has a stage for selecting entities, this stage can be skipped if
-entities are already selected at tool activation.
+entities are already selected at tool activation. This prevents the need for
+clicking an object again if it was already selected, but can also be used to for
+additional functionality.
 
-Good: Follow Me allowing a pre-selected rail. \
-Good: Move, Scale and Rotate tool \
+Good: Scale tool \
+Good: Follow Me tool allowing a pre-selected rail. \
+Good: Move and Rotate tool supporting input points outside of the pre-selected object \
 Good: Eneroth Solid Tools allowing multi-object trim/subtract if these objects are pre-selected.
 
 TODO: Add video?
@@ -441,18 +453,16 @@ Good: [Solar North](https://github.com/SketchUp/solar-north)
 
 ### Be Scale Agnostic
 
+<img src="images/be_scale_agnostic_1_rotate.png" width=195 /> <img src="images/be_scale_agnostic_2_rotate.png" width=195 /> <img src="images/be_scale_agnostic_3_rotate.png" width=195 />
+
 SketchUp looks and feels the same whether you are modeling a chair or a house.
 For instance, how quickly you zoom and pan is based on the distance to the
 object you hover and aren’t constant speeds in space. The speed isn't the same
 but feels the same, regardless of the size of the object.
 
-Good: Zoom tool moving the camera relative to the distance to what is hovered.
-
-Good: Pan tool moving the camera so that the hovered object stays under the cursor.
-
+Good: Zoom tool moving the camera relative to the distance to what is hovered. \
+Good: Pan tool moving the camera so that the hovered object stays under the cursor. \
 Good: Rotate tool protractor having the same screen size regardless of zoom level.
-
-<img src="images/be_scale_agnostic_1_rotate.png" width=195 /> <img src="images/be_scale_agnostic_2_rotate.png" width=195 /> <img src="images/be_scale_agnostic_3_rotate.png" width=195 />
 
 ## Extension Presentation
 
