@@ -59,7 +59,7 @@ Good:
 
 ```ruby
 model = Sketchup.active_model
-model.start_operation("Draw Cube", true)
+model.start_operation("Draw Cube", true) # Tell SketchUp to start an operation.
 points = [
   Geom::Point3d.new(0, 0, 0),
   Geom::Point3d.new(1.m, 0, 0),
@@ -70,7 +70,7 @@ face = model.active_entities.add_face(points)
 # Make sure face front side is directed upwards.
 face.reverse! unless face.normal.samedirection?(Z_AXIS)
 face.pushpull(1.m)
-model.commit_operation
+model.commit_operation # Tell SketchUp to commit the operation.
 ```
 
 ### Honor Group's Uniqueness
@@ -90,18 +90,23 @@ prevent accidental editing.
 
 Bad:
 
-`do_stuff(Sketchup.active_model.selection)`
+```ruby
+do_stuff(Sketchup.active_model.selection)
+```
 
 Good:
 
-`do_stuff(Sketchup.active_model.selection.reject(&:locked?))`
+```ruby
+do_stuff(Sketchup.active_model.selection.reject(&:locked?))
+```
 
 If your extension edits the contents of a group or component, not just the
 container from the outside, remember to also check for additional instances
 outside the selection as these would also be affected.
 
 Exception:
-Eneroth Hide Locked allows to hide and unhide locked groups and components.
+[Eneroth Hide Locked](https://extensions.sketchup.com/extension/13421da5-eb51-4c64-83f8-0ee2bb7a6e6f/eneroth-hide-unhide-locked)
+allows to hide and unhide locked groups and components.
 Since this is the one and only purpose of the extension, it doesn’t surprise the
 user. Accidentally hiding and unhiding is also much easier to correct than an
 accidental move or delete.
@@ -251,7 +256,7 @@ user and another one for an advanced task such as content creation.
 ### Omit Extension Version Number
 
 Sometimes developers include the extension version number in the menu entries or
-toolbar titles.This causes shortcuts and stored toolbar positions to break when
+toolbar titles. This causes shortcuts and stored toolbar positions to break when
 the extension is updated and the number changes. Don't include the version
 number in menu entries or toolbar titles.
 
@@ -332,8 +337,7 @@ Textures are not tools. Avoid referring to commands “tools” when they aren�
 In SketchUp, pressing Esc resets a tool to its initial state.
 
 Good: Rectangle Tool
-
-TODO: Check if this example can be used: https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/02_custom_tool
+Good: [02 Custom Tool Tutorial](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/02_custom_tool)
 
 ### Don’t Add UI for Switching to Select Tool
 
@@ -350,6 +354,7 @@ user to use it again. Do not switch to the Select tool or other tools once an
 operation is completed. 
 
 Good: Rectangle Tool
+Good: [02 Custom Tool Tutorial](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/02_custom_tool)
 
 Exception: Axes Tool is almost never used more than once at a time and
 reactivates the previous tool when done. The same applies to
@@ -387,19 +392,17 @@ Good: Follow Me tool allowing a pre-selected rail. \
 Good: Move and Rotate tool supporting input points outside of the pre-selected object \
 Good: Eneroth Solid Tools allowing multi-object trim/subtract if these objects are pre-selected.
 
-TODO: Add video?
-
 ### Use Inference and Inference Lock
 
 When applicable, allow the user to lock a tool to the modelling axes with arrow
 keys, or to planes and liens with Shift.
 
-Bad: Eneroth Railroad System
+Bad: [02 Custom Tool Tutorial](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/02_custom_tool)
 
 Good: Line tool \
-Good: Eneroth Scaled Tape Measure Tool
+Good: 03 Better Tool Tutorial
 
-TODO: Use different steps of SU tool examples as bad and good examples. May base on Eneroth Scaled Tape Measure Tool.
+TODO: Implement example. Decide if it should be a single Better Tool example, or several. May base on Eneroth Scaled Tape Measure tool.
 
 ### Allow both Click + Move + Click and Press + Drag + Release Style
 
