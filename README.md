@@ -416,8 +416,6 @@ Bad: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tu
 
 Good: [Example 03 - Better Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/03_better_tool)
 
-TODO: Add measurement bar guideline.
-
 ### Use Press + Drag + Release for Optional Advanced Input
 
 In SketchUp drawing is typically done in a click + move + click fashion.
@@ -453,6 +451,16 @@ Bad: "Make unique tool"
 Bad: "Press a component to make it unique so you can edit it without editing the other components. Shift makes all copies of this component also unique."
 
 Good: "Select a component to make unique. Shift = Make all instances unique."
+
+### Use the Measurement Bar
+
+When applicable, allow the user to enter exact numeric values in the measurement bar.
+This allows for higher precision modeling.
+
+Bad: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/02_custom_tool)
+
+Good: [Example 03 - Better Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/03_better_tool)
+
 
 ### Use the Instructor
 
