@@ -169,7 +169,7 @@ Bad: [Eneroth Attribute Editor](https://extensions.sketchup.com/extension/8b54e0
 
 Good: Entity Info \
 Good: [Aerilius Attribute Inspector](https://github.com/Aerilius/sketchup-attribute-inspector) \
-Good: [HtmlDialog examples](https://github.com/SketchUp/htmldialog-examples) (Example 5 and later)
+Good: [HtmlDialog Examples](https://github.com/SketchUp/htmldialog-examples) (Example 5 and later)
 
 
 ### Question Your Warnings
@@ -336,8 +336,8 @@ Textures are not tools. Avoid referring to commands “tools” when they aren�
 
 In SketchUp, pressing Esc resets a tool to its initial state.
 
-Good: Rectangle Tool
-Good: [02 Custom Tool Tutorial](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/02_custom_tool)
+Good: Rectangle Tool \
+Good: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/02_custom_tool)
 
 ### Don’t Add UI for Switching to Select Tool
 
@@ -353,8 +353,8 @@ When an operation is done, reset the tool to its initial state and allow the
 user to use it again. Do not switch to the Select tool or other tools once an
 operation is completed. 
 
-Good: Rectangle Tool
-Good: [02 Custom Tool Tutorial](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/02_custom_tool)
+Good: Rectangle Tool \
+Good: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/02_custom_tool)
 
 Exception: Axes Tool is almost never used more than once at a time and
 reactivates the previous tool when done. The same applies to
@@ -397,12 +397,14 @@ Good: Eneroth Solid Tools allowing multi-object trim/subtract if these objects a
 When applicable, allow the user to lock a tool to the modelling axes with arrow
 keys, or to planes and liens with Shift.
 
-Bad: [02 Custom Tool Tutorial](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/02_custom_tool)
+Bad: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/02_custom_tool)
 
 Good: Line tool \
-Good: 03 Better Tool Tutorial
+Good: [Example 04 - Tool Inference Lock](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/04_tool_inference_lock)
 
-TODO: Implement example. Decide if it should be a single Better Tool example, or several. May base on Eneroth Scaled Tape Measure tool.
+TODO: Check all links!
+
+TODO: Have other code bases link back here.
 
 ### Allow both Click + Move + Click and Press + Drag + Release Style
 
@@ -410,7 +412,11 @@ When drawing in SketchUp, click + move + click puts less strain on the wrist and
 is generally preferred, but press + drag + release feels more intuitive to some
 users. By allowing both styles a tool is both ergonomic and easy to pick up.
 
-TODO: Include in SU tool examples.
+Bad: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/02_custom_tool)
+
+Good: [Example 03 - Better Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/tutorials/03_better_tool)
+
+TODO: Add measurement bar guideline.
 
 ### Use Press + Drag + Release for Optional Advanced Input
 
