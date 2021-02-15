@@ -160,6 +160,9 @@ Good:
 
 ### Link Dialog to Selection
 
+<img src="images/link_dialog_to_selection1.png" width=516 />
+<img src="images/link_dialog_to_selection2.png" width=516 />
+
 If you can open a UI to edit the properties of a selected object, it feels
 natural for that UI to stay relevant when the selection changes. A UI "sticking"
 to an object that has been deselected both risks the wrong object being
@@ -174,7 +177,7 @@ Good: [HtmlDialog Examples](https://github.com/SketchUp/htmldialog-examples) (Ex
 
 ### Question Your Warnings
 
-<img src="images/question_your_warnings.jpg" width=700 />
+<img src="images/question_your_warnings.jpg" />
 
 _If you already know I want to stand here for better reach, why not just design
 it to support my body weight, instead of slapping a sticker on it?_
@@ -244,9 +247,11 @@ Typically add a submenu to Extensions, named after your extension. The same
 
 ### Minimize Toolbar Size
 
+<img src="images/minimize_toolbar_size.png" />
+
 A SketchUp user may have 10, 50 or even 100 extensions installed. Avoid making
-the toolbar take up too much space on the screen. Instead of using two commands
-for enabling and disabling some property, use a single command for toggling it.
+the toolbar take up too much space on the screen. Instead of using two buttons
+for enabling and disabling some property, use a single button for toggling it.
 Rarely used commands such as Help or About can typically be dispelled to the
 extension’s menu alone.
 
@@ -373,10 +378,12 @@ Good: [Solar North 2.0.0](https://github.com/SketchUp/solar-north)
 ### Use In-Tool Selection
 
 If a tool requires a certain selection to be used, prefer entering a select mode
-when the tool is activated without such a selection, instead of showing an error
+if the tool is activated without such a selection, instead of showing an error
 message.
 
-Good: Scale Tool, Move tool, Rotate tool
+Good: Scale Tool \
+Good: Move tool \
+Good: Rotate tool
 
 TODO: Add code example. Can e.g. use my Picker mix in.
 
@@ -394,8 +401,10 @@ Good: Eneroth Solid Tools allowing multi-object trim/subtract if these objects a
 
 ### Use Inference and Inference Lock
 
+<img src="images/inference.png" width=516 />
+
 When applicable, allow the user to lock a tool to the modelling axes with arrow
-keys, or to planes and liens with Shift.
+keys, or to planes and lines with Shift.
 
 Bad: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/examples/02_custom_tool)
 
@@ -426,6 +435,8 @@ Good: Curic Mirror
 
 ### Convey Depth and Direction with Perspective
 
+<img src="images/convey_depth_with_perspective.png" width=516 />
+
 It can be tricky to convey 3D concepts on a 2D screen. Instead of 2D handles in
 screen space, 3D handles can help convey where in space they are. A 3D circle
 can convey a plane.
@@ -435,6 +446,8 @@ Good: Rotate tool\
 Good: [Solar North](https://github.com/SketchUp/solar-north)
 
 ### Use the Status Bar
+
+<img src="images/status_bar.png" width=273 />
 
 Use the status bar to express what the user can/should do with the tool, as well
 as what modifier keys there are. Make sure to keep this text as brief as
@@ -451,6 +464,8 @@ Good: "Select a component to make unique. Shift = Make all instances unique."
 
 ### Use the Measurement Bar
 
+<img src="images/measurement_bar.png" width=273 />
+
 When applicable, allow the user to enter exact numeric values in the measurement bar.
 This allows for higher precision modeling.
 
@@ -460,6 +475,8 @@ Good: [Example 04 - Measurement Bar Tool](https://github.com/SketchUp/sketchup-r
 
 
 ### Use the Instructor
+
+<img src="images/instructor.png" width=273 />
 
 Use the Instructor to give a slightly more in depth explanation of the tool. Include a list of the tool stages, all modifier keys and any alternate workflows flows here such a preselection and in tool selection.
 
@@ -479,6 +496,8 @@ Good: Pan tool moving the camera so that the hovered object stays under the curs
 Good: Rotate tool protractor having the same screen size regardless of zoom level.
 
 ## Extension Presentation
+
+<img src="images/presentation.png" />
 
 ### The Reader
 
