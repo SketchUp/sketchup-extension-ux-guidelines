@@ -206,7 +206,9 @@ If you don't have strong branding in your extension dialogs already, why not use
 that of SketchUp? Modus is the UI framework used by SketchUp and various other
 Trimble products, and helps make your extension feel grounded in SketchUp.
 
-TODO: Add link to our usage guide.
+TODO: Make sure this document is ready.
+
+[Modus for SketchUp Extension](https://github.com/SketchUp/modus-for-sketchup-extensions) user guide.
 
 ## Menus and Toolbars
 
