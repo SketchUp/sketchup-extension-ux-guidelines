@@ -119,6 +119,7 @@ support all length unit SketchUp supports with no extra work, as well as
 following the unit settings for individual models.
 
 Bad:
+
 ```ruby
 default = "100"
 label = "Length (mm)"
@@ -129,6 +130,7 @@ length = result[0].to_f.mm
 ```
 
 Good:
+
 ```ruby
 default = 100.mm
 label = "Length"
