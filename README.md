@@ -8,7 +8,7 @@ Often it isn’t more work for developers to create a better user experience onc
 you know how. These guidelines along with code examples are intended to even
 make it easier.
 
-You may choose to ignore these guidelines. For instance, for an internal tool,
+You may choose to deviate from these guidelines. For instance, for an internal tool,
 discoverability can be sacrificed in favor of efficiency. For a technically
 complex extension you may want to use a language slightly different to that of
 SketchUp. If you already have a strong brand identity, feel free to use it.
