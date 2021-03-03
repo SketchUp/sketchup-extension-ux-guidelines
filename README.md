@@ -464,18 +464,18 @@ Bad: "Make unique tool"
 
 Bad: "Press a component to make it unique so you can edit it without editing the other components. Shift makes all copies of this component also unique."
 
-Good: "Select a component to make unique. Shift = Make all instances unique."
+Good: "Select a component to make it unique. Shift = Make all instances unique."
 
-### Use the Measurement Bar
+### Use the Measurement Box
 
 <img src="images/measurement_bar.png" width=273 />
 
-When applicable, allow the user to enter exact numeric values in the measurement bar.
+When applicable, allow the user to enter exact numeric values in the measurement box.
 This allows for higher precision modeling.
 
 Bad: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/examples/02_custom_tool)
 
-Good: [Example 04 - Measurement Bar Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/examples/04_vcb_tool)
+Good: [Example 04 - Measurement Box Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/examples/04_vcb_tool)
 
 
 ### Use the Instructor
