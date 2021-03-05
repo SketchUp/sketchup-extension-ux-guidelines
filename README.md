@@ -295,6 +295,12 @@ Good: Rectangle Tool
 
 <img src="images/tooltip_descriptions_2_good.png" />
 
+### Icons
+
+Try to achieve consistency between your icons while also making them
+distinguishable from each other (yes, we know this is hard). You can use
+SketchUp's own icons as reference for line weight, level of detail and colors.
+
 ### Use of Separators
 
 Never add separators to the Extensions menu. This makes unrelated entries appear
