@@ -488,7 +488,10 @@ Good: [Example 04 - Measurement Box Tool](https://github.com/SketchUp/sketchup-r
 
 <img src="images/instructor.png" width=273 />
 
-Use the Instructor to give a slightly more in depth explanation of the tool. Include a list of the tool stages, all modifier keys and any alternate workflows flows here such a preselection and in tool selection.
+Use the Instructor to give a slightly more in depth explanation of the tool.
+Include a list of the tool stages, all modifier keys and any alternate workflows
+here such a preselection and in tool selection.
+Use SketchUp's own Instructors as reference for formatting and phrasing.
 
 Good: [Solar North](https://github.com/SketchUp/solar-north)
 
