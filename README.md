@@ -162,15 +162,12 @@ Good:
 
 ### Link Dialog to Selection
 
-<img src="images/link_dialog_to_selection1.png" width=516 />
-<img src="images/link_dialog_to_selection2.png" width=516 />
+<video controls loop><source src="videos/link_dialog_to_selection.mp4" type="video/mp4"></video>
 
 If you can open a UI to edit the properties of a selected object, it feels
 natural for that UI to stay relevant when the selection changes. A UI "sticking"
 to an object that has been deselected both risks the wrong object being
 modified, and can have a subtle feel of being broken.
-
-Bad: [Eneroth Attribute Editor](https://extensions.sketchup.com/extension/8b54e07c-55ea-4870-9b09-d1db0bdcc23a/eneroth-attribute-editor)
 
 Good: Entity Info \
 Good: [Aerilius Attribute Inspector](https://github.com/Aerilius/sketchup-attribute-inspector) \
@@ -387,6 +384,8 @@ Good: [Solar North 2.0.0](https://github.com/SketchUp/solar-north)
 
 ### Use In-Tool Selection
 
+<video controls loop><source src="videos/in_tool_selection.mp4" type="video/mp4"></video>
+
 If a tool requires a certain selection to be used, prefer entering a select mode
 if the tool is activated without such a selection, instead of showing an error
 message.
@@ -398,6 +397,8 @@ Good: Rotate tool
 TODO: Add code example. Can e.g. use my Picker mix in.
 
 ### Support Tool Pre-Selection
+
+<video controls loop><source src="videos/tool_preselection.mp4" type="video/mp4"></video>
 
 If a tool has a stage for selecting entities, this stage can be skipped if
 entities are already selected at tool activation. This prevents the need for
