@@ -392,9 +392,8 @@ message.
 
 Good: Scale Tool \
 Good: Move tool \
-Good: Rotate tool
-
-TODO: Add code example. Can e.g. use my Picker mix in.
+Good: Rotate tool \
+Good: [In-Tool Selection Example](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/examples/99_in_tool_selection)
 
 ### Support Tool Pre-Selection
 
