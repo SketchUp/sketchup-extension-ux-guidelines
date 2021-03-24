@@ -196,19 +196,6 @@ for attention with size and bright colors. Consider the opposite route and
 instead make the less important elements less prominent, or tuck them away
 behind progressive disclosure or separate windows.
 
-
-### Consider Using Modus for Your Dialogs
-
-<img title="Modus example" src="images/modus_example.png" width=318 />
-
-If you don't have strong branding in your extension dialogs already, why not use
-that of SketchUp? Modus is the UI framework used by SketchUp and various other
-Trimble products, and helps make your extension feel grounded in SketchUp.
-
-TODO: Make sure this document is ready.
-
-[Modus for SketchUp Extension](https://github.com/SketchUp/modus-for-sketchup-extensions) user guide.
-
 ## Menus and Toolbars
 
 ### Prefer the Extension Menu
