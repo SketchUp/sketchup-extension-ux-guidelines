@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--
+  Shamelessly copied html from developer.sketchup.com.
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://developer.sketchup.com/sites/developer.sketchup.com/files/Favicon.ico" type="image/vnd.microsoft.icon" />
+    <title>Homepage | SketchUp Developer</title>
+    
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/ajax-progress.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/align.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/autocomplete-loading.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/fieldgroup.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/container-inline.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/clearfix.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/details.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/hidden.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/item-list.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/js.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/nowrap.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/position-container.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/progress.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/reset-appearance.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/resize.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/sticky-header.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/system-status-counter.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/system-status-report-counters.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/system-status-report-general-info.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/tabledrag.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/tablesort.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//core/themes/stable/css/system/components/tree-child.module.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//modules/contrib/paragraphs/css/paragraphs.unpublished.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//themes/sketchup_developer_terra/css/style.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//themes/sketchup_developer_terra/css/accordion.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://developer.sketchup.com//themes/sketchup_developer_terra/css/shame.css?qml5lf" />
+    <link rel="stylesheet" media="all" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+  
+    <style>
+      /* Center SketchUp Extensibility Guidelines */
+      .document {
+        max-width: 800px;
+        margin: auto;
+      }
+      
+      /* Reset default browser style so images don't touch vertically */
+      img { vertical-align: baseline; }
+
+      video {
+        max-width: 100%;
+      }
+      /* Syntax highlighting */
+      code { padding: 3px 8px; border-left: 8px solid #ddd; margin-top: 5px; }
+      code * { font-family: monospace; }
+      pre code { display: block; }
+      pre code {
+        padding: 9px 14px;
+        margin-top: 4px;
+        border: 1px solid #e1e1e8;
+        background: #f7f7f9;
+        border-radius: 4px;
+        font-size: 1em;
+        overflow-x: auto;
+        line-height: 1.2em;
+      }
+      pre code { color: #000; tab-size: 2; }
+      pre code .c1 { color: #0066FF } /* Comment */
+      /* inline code */
+      *:not(pre) > code {
+        padding: 1px 3px 1px 3px;
+        border: 1px solid #E1E1E8;
+        background: #F7F7F9;
+        border-radius: 4px;
+      }
+
+      /* Header links */
+      /* Based on https://jhirth.github.io/2017-01-15/quick-and-easy-header-fragment-links-for-jekyll-powered-sites */
+      [id] > a {
+        display: none;
+        color: #0c77be;
+        
+        /* Allow # link to display outside of fixed width document, instead of breaking to a new line */
+        position: absolute;
+        padding-left: 0.2em;
+      }
+      [id]:hover > a {
+        display: inline;
+      }
+      
+      /* Make scroll to anchors not end up behind header */
+      [id]:before { content: ''; display: block; position: relative; width: 0; height: 80px; margin-top: -80px }
+    </style>
+  </head>
+  <body  class="preload path-frontpage page-node-type-page">
+    <div class="navbar__universal-header">
+      <div class="container-fluid wrap">
+        <div class="trimble-logo">
+          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.5 36">
+            <path class="st0" d="M65.6 12.7h6.2V32h-6.2zM73.9 12.7h6.2v2.6h.1c1.3-2 3.3-3 5.5-3 1.9 0 3.8 1.2 3.9 3h.1c1.3-2 3.3-3 5.5-3 2.5 0 4.3 1.3 4.3 4.1V32h-6.2V18.3c0-1-.3-1.7-1.5-1.7-.7 0-1.2.3-1.6.8l-.4.5V32h-6.2V18.3c0-1-.3-1.7-1.5-1.7-.7 0-1.2.3-1.6.8l-.3.5V32H74V12.7h-.1zM101.6 4.6h6.2v9.2h.1c.9-.9 2.5-1.6 3.8-1.6 4.3 0 6.6 4.3 6.6 9.9 0 4.4-1.8 10.1-7.1 10.1-2.4 0-4-1.1-5.2-3l-1.2 2.8h-3.2V4.6zm6.2 21.2c-.1 1.6.8 2.5 2 2.5 1.7 0 2-1.7 2-5.3v-1.5c0-3.8 0-5.8-1.9-5.8-.8 0-1.3.5-1.7.8l-.3.3-.1 9zM119.8 4.6h6.2v27.3h-6.2zM133.9 23.1c0 1.7.3 4.6 2.8 4.6 1.5 0 2.8-1.1 3.1-2.6l4.2 1.5c-.3.9-2.2 5.3-7.7 5.3-5.9 0-8.6-4.8-8.6-10.1 0-5.5 2.8-10.1 8.6-10.1 6 0 8.1 5.1 8.1 10.2v1.3h-10.5v-.1zm4.6-3.6c0-1.8-.2-3.9-2.3-3.9-1.8 0-2.3 2.1-2.3 3.9h4.6zM65.6 4.5h6.2V10h-6.2zM145 29.9c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2m.4 0c0 .9.7 1.6 1.6 1.6.9 0 1.6-.7 1.6-1.6s-.7-1.6-1.6-1.6c-.9 0-1.6.7-1.6 1.6m2.7 1.1h-.4l-.7-1h-.4v1h-.3v-2.2h1c.2 0 .4 0 .6.1.2.1.3.3.3.5 0 .4-.3.6-.7.6l.6 1zm-1.1-1.3c.3 0 .8.1.8-.3 0-.3-.3-.3-.5-.3h-.6v.7h.3v-.1zM35.4 4.4h19.3v5.3h-6.2v22.1h-6.9V9.7h-6.2z"></path>
+            <path class="st0" d="M51.9 12.5H58v2.9h.1c.8-2.4 3.5-3.4 6-3.4v6.3c-.8-.3-1.6-.5-2.5-.5-2.1 0-2.7.5-3.4 1.5v12.5H52l-.1-19.3zM23 25c-.1.4-.2.8-.4 1.1-.1.1-.1.2-.1.4-.3.3-.5.4-.5.5-1.4 1.2-2.6 1.8-4.3 2.4-.6.2-2 .6-3.7.5l-2.7 1.4c3.2.7 5.9.1 6.9-.3 2-.6 3.3-1.4 4.9-2.7.3-.3 2-1.7 3.2-4.1.2-.4.4-.9.6-1.4L23 25zM13.6 6.2h.8l-.9.3 2.4 1.3c1.9-.1 3.7.8 5 2.1-.3 0-.6.1-.9.1l4 2.2v-.1c.2.1.3.2.4.4l2.7 1.4c0-.1-.1-.2-.1-.3s0-.1-.1-.2c0-.1-.1-.2-.1-.3-.8-2.2-2.3-4.1-4.1-5.6l-.2-.2c-2.9-2.2-5.8-2.7-7.2-2.8h-.2c-.9-.1-1.8 0-2.7.1h-.2c-.4.1-.7.1-1 .2-.2.1-.5.1-.7.2L13 6.3c.3-.1.4-.1.6-.1M3.2 22.5c-.4-.9-.7-2.1-.7-2.6-.1-1.1-.1-1.1-.1-2.2 0-.3 0-.8.1-1.2.1-.8.3-1.8.8-3.1V9.9c-.4.6-.8 1.2-1.2 1.9-1 2-1.2 3.4-1.4 4.4-.1.5-.1 1.1-.1 1.5 0 1.2 0 1.2.1 2.4.1.7.5 2.3 1 3.4.4.9.8 1.6 1.2 2.2 0 .1.1.1.1.2.1.1.1.2.2.2v-3.9c.1.1 0 .2 0 .3"></path>
+            <path class="st0" d="M23.4 16.1c-.2.3-.4.5-.6.8.7 1.2 1.2 2.4 1.5 3.6.1-.2.3-.4.4-.6 1.1-1.8 1.3-3.9.5-6.1 0-.1-.1-.1-.1-.2-.1-.2-.1-.4-.2-.5s-.2-.2-.2-.3c-.1-.2-.2-.3-.3-.4l-.4-.2c.3 1.4.1 2.7-.6 3.9M12.7 6.3h-.1c-.6.1-1.1.2-1.7.4.5.1.9.3 1.4.4.4-.3.8-.5 1.2-.6l-.4-.2h-.4M26.9 22.9l8.4-4.6-8.2-4.4c1.2 3.6.7 6.7-.2 9M15.3 7.8c-.3 0-.7.1-1 .2 1.1.6 2.3 1.5 3.4 2.5.8-.2 1.5-.4 2.3-.5l-4.1-2.2h-.6M19.3 25.1c-4.7.7-9.6-1.5-12.5-5.2-1.1 1.3-1.8 2.6-2.1 3.8-.1.5-.1.9-.1 1.2.2.3.4.5.6.8.7.8 2.6 2.8 5.7 3.7 1.1.3 2.1.4 3.1.5l9-4.9c.1-.4.1-.7.1-1.1-1.1.6-2.4 1-3.8 1.2M7 17.1c1.1-1 2.3-2.1 3.6-3-.1-.2-.2-.4-.2-.6-.6-1.7-.4-3.4.4-4.8.1-.1.1-.2.2-.2-1-.3-1.9-.4-2.7-.3-.5.5-.9 1-1.3 1.6-.6 1.1-1 2.3-1 3.5 0 .9.2 1.8.5 2.7.1.3.3.7.5 1.1M12 12.9c0 .1.1.1.1.2 1.2-.7 2.5-1.4 3.8-1.9-1.1-.9-2.2-1.6-3.2-2.1-.1.2-.3.3-.4.5-.6 1-.7 2.2-.3 3.3zM18.9 17c.6-.1 1.2-.3 1.6-.5-.9-1.4-1.9-2.7-3.2-3.9-.2.1-.4.2-.6.2-1.3.5-2.5 1.1-3.7 1.9 1.4 1.6 3.7 2.6 5.9 2.3M7.2 6.4c.9-.5 1.8-1 3.4-1.4L3.2 1v9c1.8-2.3 3.7-3.5 4-3.6M21.9 15.2c.6-.9.7-2.1.3-3.3 0-.1-.1-.2-.1-.3-.8 0-1.8.1-2.8.4.9 1 1.8 2.1 2.6 3.2"></path>
+            <path class="st0" d="M19 23.4c1.5-.2 2.8-.7 3.8-1.5-.3-1.2-.8-2.6-1.5-3.9-.7.4-1.4.6-2.3.8-2.8.4-5.8-.9-7.6-3.1-1.3.9-2.6 2-3.6 3 2.6 3.2 7.1 5.3 11.2 4.7M5.7 18.4c-.3-.6-.6-1.2-.9-1.9-.6-1.8-.7-3.7-.3-5.4-.3.4-.6.9-.9 1.4-.1.3-.3.6-.4.8v8.8c.6-1.1 1.4-2.4 2.5-3.7M25.3 22l-.6.6c0 .2 0 .4.1.7.2-.4.4-.8.5-1.3M3.9 26.9c-.2-.3-.4-.5-.6-.7v9.5l8-4.3c-.3-.1-.6-.1-.9-.2-3.6-1.1-5.8-3.4-6.5-4.3M27.8 29.7c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2m.4 0c0 .9.7 1.6 1.6 1.6s1.6-.7 1.6-1.6-.7-1.6-1.6-1.6c-.9 0-1.6.7-1.6 1.6m2.7 1.1h-.4l-.7-1h-.4v1h-.3v-2.2h1c.2 0 .4 0 .6.1s.3.3.3.5c0 .4-.3.6-.7.6l.6 1zm-1.1-1.3c.3 0 .8.1.8-.3 0-.3-.3-.3-.5-.3h-.6v.7h.3v-.1z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+      <nav class="navbar" role="banner">
+        <div class="container-fluid wrap">
+          <div class="navbar__branding">
+            <a href="/" title="Home" rel="home">
+              <img src="https://developer.sketchup.com/sites/developer.sketchup.com/files/SketchUp-Horizontal-RGB-120pxl_0.png" alt="Home" />
+            </a>
+          </div>
+          <button class="navbar__toggle" type="button" data-toggle="collapse" data-target=".collapse">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+          <div class="navbar__nav navbar__nav--collapse">
+            <ul>
+              <li>
+                <a href="http://forums.sketchup.com/c/developers">Community</a>
+              </li>
+              <li>
+                <a href="https://blog.sketchup.com">SketchUpdate Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <div role="main">
+        <div class="page full clearfix">
+          <div class="content">
+            <section id="homepage-section-2" class="page-section document">
+              {{ content }}
+            </section>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="footer_top--wrapper">
+      <section class="need-help-fast page-section">
+        <div class="container-fluid wrap">
+          <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center">
+              <h2>Need Help Fast?</h2>
+              <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                  <img class="padding-bottom-small" src="https://help.sketchup.com/themes/sketchup_help_terra/images/sketchUp_forum_logo.png">
+                </div>
+              </div>
+              <p class="font-size-1">SketchUp’s outstanding community of passionate experts have answers to your questions.</p>
+              <a class="button button--default" href="http://forums.sketchup.com/">Find Your Answer</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer" role="contentinfo">
+      <div class="container-fluid wrap">
+        <div class="container-fluid wrap">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="trimble-logo">
+                <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.5 36"><path class="st0" d="M65.6 12.7h6.2V32h-6.2zM73.9 12.7h6.2v2.6h.1c1.3-2 3.3-3 5.5-3 1.9 0 3.8 1.2 3.9 3h.1c1.3-2 3.3-3 5.5-3 2.5 0 4.3 1.3 4.3 4.1V32h-6.2V18.3c0-1-.3-1.7-1.5-1.7-.7 0-1.2.3-1.6.8l-.4.5V32h-6.2V18.3c0-1-.3-1.7-1.5-1.7-.7 0-1.2.3-1.6.8l-.3.5V32H74V12.7h-.1zM101.6 4.6h6.2v9.2h.1c.9-.9 2.5-1.6 3.8-1.6 4.3 0 6.6 4.3 6.6 9.9 0 4.4-1.8 10.1-7.1 10.1-2.4 0-4-1.1-5.2-3l-1.2 2.8h-3.2V4.6zm6.2 21.2c-.1 1.6.8 2.5 2 2.5 1.7 0 2-1.7 2-5.3v-1.5c0-3.8 0-5.8-1.9-5.8-.8 0-1.3.5-1.7.8l-.3.3-.1 9zM119.8 4.6h6.2v27.3h-6.2zM133.9 23.1c0 1.7.3 4.6 2.8 4.6 1.5 0 2.8-1.1 3.1-2.6l4.2 1.5c-.3.9-2.2 5.3-7.7 5.3-5.9 0-8.6-4.8-8.6-10.1 0-5.5 2.8-10.1 8.6-10.1 6 0 8.1 5.1 8.1 10.2v1.3h-10.5v-.1zm4.6-3.6c0-1.8-.2-3.9-2.3-3.9-1.8 0-2.3 2.1-2.3 3.9h4.6zM65.6 4.5h6.2V10h-6.2zM145 29.9c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2m.4 0c0 .9.7 1.6 1.6 1.6.9 0 1.6-.7 1.6-1.6s-.7-1.6-1.6-1.6c-.9 0-1.6.7-1.6 1.6m2.7 1.1h-.4l-.7-1h-.4v1h-.3v-2.2h1c.2 0 .4 0 .6.1.2.1.3.3.3.5 0 .4-.3.6-.7.6l.6 1zm-1.1-1.3c.3 0 .8.1.8-.3 0-.3-.3-.3-.5-.3h-.6v.7h.3v-.1zM35.4 4.4h19.3v5.3h-6.2v22.1h-6.9V9.7h-6.2z"></path><path class="st0" d="M51.9 12.5H58v2.9h.1c.8-2.4 3.5-3.4 6-3.4v6.3c-.8-.3-1.6-.5-2.5-.5-2.1 0-2.7.5-3.4 1.5v12.5H52l-.1-19.3zM23 25c-.1.4-.2.8-.4 1.1-.1.1-.1.2-.1.4-.3.3-.5.4-.5.5-1.4 1.2-2.6 1.8-4.3 2.4-.6.2-2 .6-3.7.5l-2.7 1.4c3.2.7 5.9.1 6.9-.3 2-.6 3.3-1.4 4.9-2.7.3-.3 2-1.7 3.2-4.1.2-.4.4-.9.6-1.4L23 25zM13.6 6.2h.8l-.9.3 2.4 1.3c1.9-.1 3.7.8 5 2.1-.3 0-.6.1-.9.1l4 2.2v-.1c.2.1.3.2.4.4l2.7 1.4c0-.1-.1-.2-.1-.3s0-.1-.1-.2c0-.1-.1-.2-.1-.3-.8-2.2-2.3-4.1-4.1-5.6l-.2-.2c-2.9-2.2-5.8-2.7-7.2-2.8h-.2c-.9-.1-1.8 0-2.7.1h-.2c-.4.1-.7.1-1 .2-.2.1-.5.1-.7.2L13 6.3c.3-.1.4-.1.6-.1M3.2 22.5c-.4-.9-.7-2.1-.7-2.6-.1-1.1-.1-1.1-.1-2.2 0-.3 0-.8.1-1.2.1-.8.3-1.8.8-3.1V9.9c-.4.6-.8 1.2-1.2 1.9-1 2-1.2 3.4-1.4 4.4-.1.5-.1 1.1-.1 1.5 0 1.2 0 1.2.1 2.4.1.7.5 2.3 1 3.4.4.9.8 1.6 1.2 2.2 0 .1.1.1.1.2.1.1.1.2.2.2v-3.9c.1.1 0 .2 0 .3"></path><path class="st0" d="M23.4 16.1c-.2.3-.4.5-.6.8.7 1.2 1.2 2.4 1.5 3.6.1-.2.3-.4.4-.6 1.1-1.8 1.3-3.9.5-6.1 0-.1-.1-.1-.1-.2-.1-.2-.1-.4-.2-.5s-.2-.2-.2-.3c-.1-.2-.2-.3-.3-.4l-.4-.2c.3 1.4.1 2.7-.6 3.9M12.7 6.3h-.1c-.6.1-1.1.2-1.7.4.5.1.9.3 1.4.4.4-.3.8-.5 1.2-.6l-.4-.2h-.4M26.9 22.9l8.4-4.6-8.2-4.4c1.2 3.6.7 6.7-.2 9M15.3 7.8c-.3 0-.7.1-1 .2 1.1.6 2.3 1.5 3.4 2.5.8-.2 1.5-.4 2.3-.5l-4.1-2.2h-.6M19.3 25.1c-4.7.7-9.6-1.5-12.5-5.2-1.1 1.3-1.8 2.6-2.1 3.8-.1.5-.1.9-.1 1.2.2.3.4.5.6.8.7.8 2.6 2.8 5.7 3.7 1.1.3 2.1.4 3.1.5l9-4.9c.1-.4.1-.7.1-1.1-1.1.6-2.4 1-3.8 1.2M7 17.1c1.1-1 2.3-2.1 3.6-3-.1-.2-.2-.4-.2-.6-.6-1.7-.4-3.4.4-4.8.1-.1.1-.2.2-.2-1-.3-1.9-.4-2.7-.3-.5.5-.9 1-1.3 1.6-.6 1.1-1 2.3-1 3.5 0 .9.2 1.8.5 2.7.1.3.3.7.5 1.1M12 12.9c0 .1.1.1.1.2 1.2-.7 2.5-1.4 3.8-1.9-1.1-.9-2.2-1.6-3.2-2.1-.1.2-.3.3-.4.5-.6 1-.7 2.2-.3 3.3zM18.9 17c.6-.1 1.2-.3 1.6-.5-.9-1.4-1.9-2.7-3.2-3.9-.2.1-.4.2-.6.2-1.3.5-2.5 1.1-3.7 1.9 1.4 1.6 3.7 2.6 5.9 2.3M7.2 6.4c.9-.5 1.8-1 3.4-1.4L3.2 1v9c1.8-2.3 3.7-3.5 4-3.6M21.9 15.2c.6-.9.7-2.1.3-3.3 0-.1-.1-.2-.1-.3-.8 0-1.8.1-2.8.4.9 1 1.8 2.1 2.6 3.2"></path><path class="st0" d="M19 23.4c1.5-.2 2.8-.7 3.8-1.5-.3-1.2-.8-2.6-1.5-3.9-.7.4-1.4.6-2.3.8-2.8.4-5.8-.9-7.6-3.1-1.3.9-2.6 2-3.6 3 2.6 3.2 7.1 5.3 11.2 4.7M5.7 18.4c-.3-.6-.6-1.2-.9-1.9-.6-1.8-.7-3.7-.3-5.4-.3.4-.6.9-.9 1.4-.1.3-.3.6-.4.8v8.8c.6-1.1 1.4-2.4 2.5-3.7M25.3 22l-.6.6c0 .2 0 .4.1.7.2-.4.4-.8.5-1.3M3.9 26.9c-.2-.3-.4-.5-.6-.7v9.5l8-4.3c-.3-.1-.6-.1-.9-.2-3.6-1.1-5.8-3.4-6.5-4.3M27.8 29.7c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2m.4 0c0 .9.7 1.6 1.6 1.6s1.6-.7 1.6-1.6-.7-1.6-1.6-1.6c-.9 0-1.6.7-1.6 1.6m2.7 1.1h-.4l-.7-1h-.4v1h-.3v-2.2h1c.2 0 .4 0 .6.1s.3.3.3.5c0 .4-.3.6-.7.6l.6 1zm-1.1-1.3c.3 0 .8.1.8-.3 0-.3-.3-.3-.5-.3h-.6v.7h.3v-.1z"></path></svg>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+              <p>Positioning-centric information is changing the way people, businesses and governments work throughout the world. By applying Trimble's advanced positioning solutions, productivity increases and safety improvements are being realized.</p>
+              <p><a href="https://www.trimble.com/">More About Trimble</a></p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md">
+                  <nav class="footer-links pad-bottom-lg pad-bottom-md-none">
+                    <ul class="footer-links__list list-unstyled">
+                      <li class="footer-links__list-item footer-links__list-header">About Us</li>
+                      <li class="footer-links__list-item"><a href="https://www.sketchup.com/team/">The SketchUp Team</a></li>
+                      <li class="footer-links__list-item"><a href="https://blog.sketchup.com" target="_blank">SketchUp Blog</a></li>
+                      <li class="footer-links__list-item"><a href="https://buildings.trimble.com" target="_blank">Trimble Buildings</a></li>
+                      <li class="footer-links__list-item"><a href="https://www.sketchup.com/legal/privacy-notice">Privacy Policy</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md">
+                  <nav class="footer-links pad-bottom-lg pad-bottom-md-none">
+                    <ul class="footer-links__list list-unstyled">
+                      <li class="footer-links__list-item footer-links__list-header">Developers</li>
+                      <li class="footer-links__list-item"><a href="https://developer.sketchup.com" target="_blank">Developer Center</a></li>
+                      <li class="footer-links__list-item"><a href="http://ruby.sketchup.com/" target="_blank">SketchUp Ruby API</a></li>
+                      <li class="footer-links__list-item"><a href="https://extensions.sketchup.com/en/developer_center/sketchup_sdk" target="_blank">SketchUp SDK</a></li>
+                      <li class="footer-links__list-item"><a href="https://extensions.sketchup.com/" target="_blank">Extensions</a></li>
+                      <li class="footer-links__list-item"><a href="https://forums.sketchup.com/c/developers" target="_blank">Developer Forum</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md">
+                  <nav class="footer-links pad-bottom-lg pad-bottom-md-none">
+                    <ul class="footer-links__list list-unstyled">
+                      <li class="footer-links__list-item footer-links__list-header">Programs</li>
+                      <li class="footer-links__list-item"><a href="https://www.sketchup.com/education/grants">Educational Grants</a></li>
+                      <li class="footer-links__list-item"><a href="https://www.sketchup.com/company/programs/visiting-professionals">Visiting Professionals</a></li>
+                      <li class="footer-links__list-item"><a href="https://www.sketchup.com/company/programs/non-profits">Non-Profit Organizations</a></li>
+                      <li class="footer-links__list-item"><a href="https://blog.sketchup.com/article/my-sketchy-summer-sketchup-internship" target="_blank">Project Spectrum</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md">
+                  <nav class="footer-links pad-bottom-lg pad-bottom-md-none">
+                    <ul class="footer-links__list list-unstyled">
+                      <li class="footer-links__list-item footer-links__list-header">Help</li>
+                      <li class="footer-links__list-item"><a href="/contact-support">Contact Us</a></li>
+                      <li class="footer-links__list-item"><a href="https://forums.sketchup.com" target="_blank">Forum</a></li>
+                      <li class="footer-links__list-item"><a href="https://help.sketchup.com" target="_blank">Help Center</a></li>
+                      <li class="footer-links__list-item"><a href="https://www.sketchup.com/license/renew">Retrieve SketchUp License</a></li>
+                      <li class="footer-links__list-item"><a href="https://www.sketchup.com/resellers/for-commercial">Resellers</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="pad-v-sm">
+                <hr>
+              </div>
+              <ul class="social-links width-100 list-inline list-inline--center pad-bottom-lg pad-bottom-md-none">
+                <li class="social-links__item twitter"><a href="http://www.twitter.com/sketchup"><svg viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"></path></svg></a></li>
+                <li class="social-links__item instagram"><a href="https://www.instagram.com/sketchup_official/"><svg viewBox="0 0 512 512"><path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z"></path><path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z"></path><circle cx="351.5" cy="160.5" r="21.5"></circle></svg></a></li>
+                <li class="social-links__item facebook"><a href="http://www.facebook.com/sketchup"><svg viewBox="0 0 512 512"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path></svg></a></li>
+                <li class="social-links__item youtube"><a href="https://www.youtube.com/user/SketchUpVideo/"><svg viewBox="0 0 512 512"><path d="M422.6 193.6c-5.3-45.3-23.3-51.6-59-54 -50.8-3.5-164.3-3.5-215.1 0 -35.7 2.4-53.7 8.7-59 54 -4 33.6-4 91.1 0 124.8 5.3 45.3 23.3 51.6 59 54 50.9 3.5 164.3 3.5 215.1 0 35.7-2.4 53.7-8.7 59-54C426.6 284.8 426.6 227.3 422.6 193.6zM222.2 303.4v-94.6l90.7 47.3L222.2 303.4z"></path></svg></a></li>
+                <li class="social-links__item email"><a href="http://blog.sketchup.com/article/stay-updated"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"></path></svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <style>
+          body { padding-top: 0; }
+          .page-section { padding-top: 64px; }
+          .help--icon-featurette .icon { font-size: 36px; }
+          .footer .social-links__item a{
+          position: relative;
+          display: block;
+          height: 20px;
+          height: 2.0rem;
+          width: 20px;
+          width: 2.0rem;
+          }
+        </style>
+        <footer class="footer--bottom">
+          <div class="row">
+    	      <footer class="footer--bottom">
+              <div class="container-fluid wrap">
+                <div class="row">
+                  <div class="col-xs-12 col-sm">
+                    <nav class="legal-links">
+                      <ul class="legal-links__list list-inline list-inline--left">
+                        <li class="legal-links__list-item"><a href="https://www.sketchup.com/legal/privacy-notice">Privacy Policy</a></li>
+                        <li class="legal-links__list-item"><a href="https://www.sketchup.com/legal">Terms of Use</a></li>
+                        <li class="legal-links__list-item"><a href="https://www.sketchup.com/contact-us">Contact</a></li>
+                        <li class="legal-links__list-item"><a href="https://www.trimble.com/Corporate/Privacy.aspx?tab=contact_us">Do Not Sell My Personal Information</a></li>
+                        <li class="legal-links__list-item">© 2021, Trimble Inc.</li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-md-3">
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </footer>
+  </div>
+  <script>
+    // Header links
+    for(let h of document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]')) {
+        h.innerHTML += ` <a href="#${h.id}" aria-hidden="true">#</a>`;
+    }
+  </script>
+</html>
