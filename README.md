@@ -493,7 +493,8 @@ but feels the same, regardless of the size of the object.
 
 Good: Zoom tool moving the camera relative to the distance to what is hovered. \
 Good: Pan tool moving the camera so that the hovered object stays under the cursor. \
-Good: Rotate tool protractor having the same screen size regardless of zoom level.
+Good: Rotate tool protractor having the same screen size regardless of zoom level. \
+Good: [Solar North](https://github.com/SketchUp/solar-north) having the same screen size regardless of zoom level.
 
 ## Extension Presentation
 
