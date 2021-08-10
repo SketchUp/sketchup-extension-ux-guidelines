@@ -290,6 +290,14 @@ Good: Rectangle Tool
 
 <img src="images/tooltip_descriptions_2_good.png" />
 
+Use the command description to describe what the command does.
+Don't use it to tell the user what to do before activating the command.
+
+Bad: Select face. \
+Bad: Select face and covert to door.
+
+Good: Convert the selected face to a door.
+
 ### Icons
 
 Try to achieve consistency between your icons while also making them
