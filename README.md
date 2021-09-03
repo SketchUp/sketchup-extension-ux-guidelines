@@ -160,6 +160,18 @@ Good:
 
 <img src="images/convey_missing_license_good.png" width=516 />
 
+
+### Be Nice In Your Error Messages
+
+Prefer friendly error messages and avoid exclamation marks.
+You want to help your user getting it right, not yell at them for getting it wrong.
+
+Bad: "TRIAL EXPIRED" \
+Bad: "No scenes!"
+
+Good: "The trial license for My Super Extension 2000 has expired." \
+Good: "Create a scene and try again."
+
 ### Link Dialog to Selection
 
 <video controls loop><source src="videos/link_dialog_to_selection.mp4" type="video/mp4"></video>
