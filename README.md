@@ -367,7 +367,7 @@ Textures are not tools. Avoid referring to commands “tools” when they aren�
 In SketchUp, pressing Esc resets a tool to its initial state.
 
 Good: Rectangle Tool \
-Good: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/examples/02_custom_tool)
+Good: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/main/examples/02_custom_tool)
 
 ### Don’t Add UI for Switching to Select Tool
 
@@ -384,7 +384,7 @@ user to use it again. Do not switch to the Select tool or other tools once an
 operation is completed. 
 
 Good: Rectangle Tool \
-Good: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/examples/02_custom_tool)
+Good: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/main/examples/02_custom_tool)
 
 Exception: Axes Tool is almost never used more than once at a time and
 reactivates the previous tool when done. The same applies to
@@ -411,7 +411,7 @@ message.
 Good: Scale Tool \
 Good: Move tool \
 Good: Rotate tool \
-Good: [In-Tool Selection Example](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/examples/99_in_tool_selection)
+Good: [In-Tool Selection Example](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/main/examples/99_in_tool_selection)
 
 ### Support Tool Pre-Selection
 
@@ -434,10 +434,10 @@ Good: Eneroth Solid Tools allowing multi-object trim/subtract if these objects a
 When applicable, allow the user to lock a tool to the modelling axes with arrow
 keys, or to planes and lines with Shift.
 
-Bad: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/examples/02_custom_tool)
+Bad: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/main/examples/02_custom_tool)
 
 Good: Line tool \
-Good: [Example 05 - Tool Inference Lock](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/examples/05_tool_inference_lock)
+Good: [Example 05 - Tool Inference Lock](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/main/examples/05_tool_inference_lock)
 
 ### Allow both Click + Move + Click and Press + Drag + Release Style
 
@@ -445,10 +445,10 @@ When drawing in SketchUp, click + move + click puts less strain on the wrist and
 is generally preferred, but press + drag + release feels more intuitive to some
 users. By allowing both styles a tool is both ergonomic and easy to pick up.
 
-Bad: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/examples/02_custom_tool)
+Bad: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/main/examples/02_custom_tool)
 
 Good: Line tool \
-Good: [Example 03 - Press+Drag+Release Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/examples/03_press_drag_release_tool)
+Good: [Example 03 - Press+Drag+Release Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/main/examples/03_press_drag_release_tool)
 
 ### Use Press + Drag + Release for Optional Advanced Input
 
@@ -497,9 +497,9 @@ Good: "Select a component to make it unique. Shift = Make all instances unique."
 When applicable, allow the user to enter exact numeric values in the measurement box.
 This allows for higher precision modeling.
 
-Bad: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/examples/02_custom_tool)
+Bad: [Example 02 - Custom Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/main/examples/02_custom_tool)
 
-Good: [Example 04 - Measurement Box Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/master/examples/04_vcb_tool)
+Good: [Example 04 - Measurement Box Tool](https://github.com/SketchUp/sketchup-ruby-api-tutorials/tree/main/examples/04_vcb_tool)
 
 
 ### Use the Instructor
