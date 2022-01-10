@@ -306,7 +306,7 @@ Use the command description to describe what the command does.
 Don't use it to tell the user what to do before activating the command.
 
 Bad: Select face. \
-Bad: Select face and covert to door.
+Bad: Select face and convert to door.
 
 Good: Convert the selected face to a door.
 
