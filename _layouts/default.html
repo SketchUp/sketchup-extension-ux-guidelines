@@ -108,7 +108,7 @@
         border-radius: 4px;
       }
 
-      /* Header links */
+      /* Header anchor links */
       /* Based on https://jhirth.github.io/2017-01-15/quick-and-easy-header-fragment-links-for-jekyll-powered-sites */
       [id] > a {
         display: none;
@@ -2606,5 +2606,14 @@ width: 1.3076171875em;
     <script src="https://developer.sketchup.com/themes/sketchup_developer_terra/scripts/terra/dropdown.js?rpnyec"></script>
     <script src="https://developer.sketchup.com/themes/sketchup_developer_terra/scripts/terra/navigation.js?rpnyec"></script>
     <script src="https://developer.sketchup.com/themes/sketchup_developer_terra/scripts/terra/collapse.js?rpnyec"></script>
+    
+      <!-- Modified -->
+      <script>
+      /* Header anchor links */
+      /* Based on https://jhirth.github.io/2017-01-15/quick-and-easy-header-fragment-links-for-jekyll-powered-sites */
+      for(let h of document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]')) {
+          h.innerHTML += ` <a href="#${h.id}" aria-hidden="true">#</a>`;
+      }
+    </script>
   </body>
 </html>
